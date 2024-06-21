@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Bootstrap</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <h3>List group</h3>
+    <ul class="list-group" id="myTab">
+        <li class="list-group-item active">
+            Primero
+        </li>
+        <li class="list-group-item">
+            Segundo
+        </li>
+        <li class="list-group-item disabled">
+            Tercero
+        </li>
+        <li class="list-group-item">
+            Cuarto
+        </li>
+    </ul>
+    
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const myTab = document.getElementById("myTab");
+        myTab.addEventListener('show.bs.tab', event => {
+            console.log('show');
+        });
+
+        myTab.addEventListener('hide.bs.tab', event => {
+            console.log('cerrado');
+        });
+
+        myTab.addEventListener('hidden.bs.tab', event => {
+            console.log('cerrado con closed');
+        });
+
+        const myTabI = bootstrap.Tab.getOrCreateInstance('#myTab');
+        const myTabIItem = bootstrap.Tab.getOrCreateInstance(myTabI._getChildren()[1]);
+        myTabIItem.show();
+        
+
+    </script>
+    
+</body>
+</html>

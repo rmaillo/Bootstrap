@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Bootstrap</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- Alerta -->
+    <h3>Alerta</h3>
+    <div class="alert alert-primary">Alerta</div>
+    <div class="alert alert-secondary">Alerta</div>
+    <div class="alert alert-success">Alerta</div>
+    <div class="alert alert-danger">Alerta</div>
+    <div class="alert alert-warning">Alerta</div>
+    <div class="alert alert-info">Alerta</div>
+    <div class="alert alert-light">Alerta</div>
+    <div class="alert alert-dark">Alerta</div>
+
+    <br>
+  
+    <!-- Alerta con contenido -->
+    <h3>Contenido</h3>
+    <div class="alert alert-danger">
+        <h4 class="alert-heading" >Titulo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit est debitis perspiciatis sint distinctio minus fugit nobis soluta doloremque maxime saepe quia dolor dignissimos dolorem, culpa nihil, esse quisquam optio id doloribus sunt maiores! Cumque fuga pariatur accusantium a illo quisquam aspernatur nihil placeat optio, beatae dicta quo provident doloribus itaque quod suscipit blanditiis nobis aliquam minus fugit? Reprehenderit.</p>
+    </div>
+    <h3>Cerrar</h3>
+    <div class="alert alert-danger show fade" id="myAlert">
+        <h4 class="alert-heading" >Titulo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit est debitis perspiciatis sint distinctio minus fugit nobis soluta doloremque maxime saepe quia dolor dignissimos dolorem, culpa nihil, esse quisquam optio id doloribus sunt maiores! Cumque fuga pariatur accusantium a illo quisquam aspernatur nihil placeat optio, beatae dicta quo provident doloribus itaque quod suscipit blanditiis nobis aliquam minus fugit? Reprehenderit.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const myAlert = document.getElementById("myAlert");
+        myAlert.addEventListener('closed.bs.alert', event => {
+            console.log('cerrado');
+        });
+
+        myAlert.addEventListener('close.bs.alert', event => {
+            console.log('cerrado con closed');
+        });
+
+        const myAlertI = bootstrap.Alert.getOrCreateInstance('#myAlert');
+        // myAlertI.close();
+
+    </script>
+    
+</body>
+</html>

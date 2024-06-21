@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Bootstrap</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <h3>Dropdown</h3>
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" id="myDropdown">
+            Mi listado
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 4</a>
+                </li>
+            </ul>
+        </button>
+    </div>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const myDropdown = document.getElementById("myDropdown");
+        myDropdown.addEventListener('show.bs.dropdown', event => {
+            console.log('show');
+        });
+
+        myDropdown.addEventListener('hide.bs.dropdown', event => {
+            console.log('cerrado');
+        });
+
+        const myDropdownI = bootstrap.Dropdown.getOrCreateInstance('#myDropdown');
+        //myDropdownI.show();
+        //myDropdownI.hide();
+
+    </script>
+    
+</body>
+</html>

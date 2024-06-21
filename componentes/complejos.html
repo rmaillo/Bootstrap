@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Bootstrap</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <h3>Dropdown</h3>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Mi listado
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 4</a>
+                </li>
+            </ul>
+        </button>
+    </div>
+
+    <br>
+
+    <h3>Dropdown con divisores</h3>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Mi listado
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 4</a>
+                </li>
+            </ul>
+        </button>
+    </div>
+
+    <br>
+
+    <h3>Nav</h3>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Opción 1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opción 2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opción 3</a>
+        </li>
+    </ul>
+
+    <br>
+
+    <h3>Nav Center</h3>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Opción 1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opción 2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opción 3</a>
+        </li>
+    </ul>
+
+    <h3>Nav End</h3>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Opción 1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opción 2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opción 3</a>
+        </li>
+    </ul>
+
+    <h3>Nav Center</h3>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Opción 1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opción 2</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opción 3</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </li>
+            </ul> 
+        </li>
+    </ul>
+
+    <h3>Cards</h3>
+    <div class="card text-bg-success">
+        <div class="card-header">
+            <h3>Cabezera1</h3>
+        </div>
+        <div class="card-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas! Dolores ab temporibus fugiat eos minima? Eveniet eaque eius ad exercitationem tenetur magnam nostrum fugiat assumenda. Facere, asperiores! Omnis voluptatibus hic repudiandae deleniti eum ad est vitae provident accusantium officia?
+        </div>
+        <div class="card-header">
+            <h3>Cabezera2</h3>
+        </div>
+        <div class="card-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas! Dolores ab temporibus fugiat eos minima? Eveniet eaque eius ad exercitationem tenetur magnam nostrum fugiat assumenda. Facere, asperiores! Omnis voluptatibus hic repudiandae deleniti eum ad est vitae provident accusantium officia?
+        </div>
+        <div class="card-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, deleniti?</p>
+        </div>
+    </div>
+
+    <h3>Modal</h3>
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-tittle">Modal titulo</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Contenido
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-success">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Abrir Modal</button>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
