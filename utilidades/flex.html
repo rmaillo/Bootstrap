@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <h2>Flex Base</h2>
+    <div>
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+    
+    <br>
+
+    <div class="d-flex">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+
+    <br>
+
+    <div class="d-sm-flex">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+    
+    <br>
+
+    <div class="d-flex flex-row">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-row-reverse">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+    
+    <br>
+
+    <div class="d-flex flex-column">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-column-reverse">
+        <div class="bg-warning border p-3">1</div>
+        <div class="bg-danger border p-3">2</div>
+        <div class="bg-warning border p-3">3</div>
+        <div class="bg-danger border p-3">4</div>
+    </div>
+    
+    <br>
+    <!--
+    <h2>Sin Wrap</h2>
+    <div class="d-flex bg-secondary">
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+    </div>
+
+    <br>
+    -->
+    <h2>Con Wrap</h2>
+    <div class="d-flex flex-wrap bg-secondary">
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 1</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 2</div>
+        <div class="bg-warning border p-3" style="width: 100px;">Content Flex 3</div>
+        <div class="bg-danger border p-3" style="width: 100px;">Content Flex 4</div>
+    </div>
+
+    <br>
+
+    <h2>Grow - Shrink</h2>
+    <div class="d-flex">
+        <div class="bg-primary p-3 flex-grow-1">Content Flex 1</div>
+        <div class="bg-secondary p-3 flex-grow-1">Content Flex 2</div>
+        <div class="bg-primary p-3">Content Flex 3</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex">
+        <div class="bg-primary p-3 flex-grow-1">Content Flex 1</div>
+        <div class="bg-secondary p-3 flex-grow-0">Content Flex 2</div>
+        <div class="bg-primary p-3">Content Flex 3</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex">
+        <div class="bg-primary p-3 flex-shrink-1">Content Flex 1</div>
+        <div class="bg-secondary p-3 flex-shrink-1">Content Flex 2</div>
+        <div class="bg-primary p-3">Content Flex 3</div>
+    </div>
+
+    <br>
+
+    <h2>Fill</h2>
+    <div class="d-flex">
+        <div class="bg-primary p-3 flex-fill">Content Flex 1</div>
+        <div class="bg-secondary p-3">Content Flex 2</div>
+        <div class="bg-primary p-3">Content Flex 3</div>
+    </div>
+
+    <br>
+
+    <h2>Alineación</h2>
+
+    <h3>Align-items</h3>
+    <div class="d-flex flex-wrap bg-secondary align-items-start" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-items-stretch" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-items-baseline" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-items-end" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-items-center" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <h3>Align-self</h3>
+    <div class="d-flex flex-wrap bg-secondary" style="height: 200px;">
+        <div class="bg-warning p-3 align-self-start">align-self-start</div>
+        <div class="bg-danger p-3 align-self-end">align-self-end</div>
+        <div class="bg-warning p-3 align-self-baseline">align-self-baseline</div>
+        <div class="bg-danger p-3 align-self-stretch">align-self-stretch</div>
+    </div>
+
+    <br>
+
+    <h3>Justify-content</h3>
+    <div class="d-flex flex-wrap bg-secondary justify-content-start" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary justify-content-center" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary justify-content-evenly" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary justify-content-around" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary justify-content-between" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary justify-content-end" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <h2>Align-content</h2>
+    <div class="d-flex flex-wrap bg-secondary align-content-start" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-content-center" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-content-end" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex flex-wrap bg-secondary align-content-between" style="height: 100px;">
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+        <div class="bg-warning p-3">Content Flex 1</div>
+        <div class="bg-danger p-3 h-50">Content Flex 2</div>
+    </div>
+
+    <br>
+
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
